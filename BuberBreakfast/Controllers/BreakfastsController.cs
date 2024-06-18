@@ -74,12 +74,24 @@ public class BreakfastsController : ControllerBase
     [HttpPut("{id:guid}")]
     public IActionResult UpdateBreakfast(Guid id, UpdateBreakfastRequest req)
     {
-        return Ok(req);
+        var breakfast = new Breakfast(
+            id,
+            req.Name,
+            req.Description,
+            req.StartDateTime,
+            req.EndDateTime,
+            DateTime.UtcNow,
+            req.Savory,
+            req.Sweet
+        );
+        _breakfastService.UpdateBreakfast(breakfast);
+        return NoContent();
     }
 
     [HttpDelete("{id:guid}")]
     public IActionResult DeleteBreakfast(Guid id)
     {
-        return Ok(id);
+        _breakfastService.DeleteBreakfast(id);
+        return NoContent();
     }
 }
