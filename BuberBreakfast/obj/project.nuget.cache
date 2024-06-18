@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zArPG2rZawo=",
+  "dgSpecHash": "eJwOICG/sDI=",
   "success": true,
   "projectFilePath": "D:\\MainFolders\\programcodestuff\\csharp\\restapi\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
